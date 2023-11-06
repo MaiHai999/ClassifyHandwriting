@@ -4,9 +4,6 @@ import cv2
 from tensorflow import keras
 import sys
 import string
-import matplotlib.pyplot as plt
-
-
 
 from interface.DrawingCanvas import DrawingCanvas
 
