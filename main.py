@@ -4,6 +4,7 @@ import cv2
 from tensorflow import keras
 import sys
 import string
+import matplotlib.pyplot as plt
 
 
 
@@ -48,7 +49,7 @@ class HandwritingApp(QMainWindow):
         image = cv2.resize(img, (28,28), interpolation =  cv2.INTER_AREA)
         _, thresholded_image = cv2.threshold(image, 220, 255, cv2.THRESH_BINARY)
         inverted_image = ~thresholded_image
-        input_img = inverted_image.flatten().reshape(1, -1)
+        input_img = inverted_image.reshape(1,28,28)
 
         predictions = self.model.predict(input_img)
         result = self.uppercase_alphabet[int(predictions.argmax(axis=1))]
