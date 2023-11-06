@@ -16,6 +16,6 @@ You must install some lib such as numpy , tensorflow. When you  download this pr
 - Pip install pandas
 
 3. Run program.
-After install lib , you can run file main to show panel , Note: Because My computer dose not enough resources so I only train 4 character of train set. If you want classify 26 character of anphabet you only run again file model but before you run file model you must decompression file .csv in dataset
+After install lib , you can run file main.py to show panel , Note: Because My computer dose not enough resources so I only train 4 character of train set. If you want classify 26 character of anphabet you only run again file model.py but before you run file model you must decompression file .csv in dataset
 	
 
